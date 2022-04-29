@@ -1,0 +1,23 @@
+{
+  "name": "img-upload",
+  "version": "1.0.0",
+  "description": "Easy to use S3 image uploader.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["AWS", "Typescript", "S3", "Node.js"],
+  "author": "Robert Perez",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.80.0",
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
