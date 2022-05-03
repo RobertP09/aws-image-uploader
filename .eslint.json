@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": false,
+    "node": true,
+    "jest": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "ignorePatterns": [
+    "dist/**",
+    "jest.config.ts",
+    "cypress"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "code": 160,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true
+      }
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "linebreak-style": "off"
+  }
+}

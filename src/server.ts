@@ -7,8 +7,8 @@ import {
 
 const PORT = 4000;
 
-const uploaderConfig: IUploaderOptions = {
-  bucketName: 'rp-image-uploader',
+const uploaderConfig = {
+  bucketName: 'enter-name',
   credentials: {
     accessKeyId: "",
     secretAccessKey: ""
@@ -19,7 +19,6 @@ const uploaderConfig: IUploaderOptions = {
 const uploader = new ImageUploader(uploaderConfig);
 
 const app = express();
-
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
